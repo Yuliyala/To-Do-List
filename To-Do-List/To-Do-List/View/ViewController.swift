@@ -9,10 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var tableView: UITableView!
-    
-    
     let vm = ToDoViewModel.sharedInstance
     var data : [Task] = [Task(name: "Task1", time: Date()), Task(name: "Task2", time: Date())]
     

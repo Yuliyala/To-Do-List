@@ -8,7 +8,7 @@
 import UIKit
 
 class EditTaskViewController: UIViewController {
-
+    
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -27,7 +27,7 @@ class EditTaskViewController: UIViewController {
             datePicker.date = myTask.time
         }
     }
-   
+    
     @IBAction func saveButton(_ sender: Any) {
         let newTask = Task(name: name.text ?? "", time: datePicker.date)
         vm.editTask(task: self.task!, updatedTask: newTask) {
